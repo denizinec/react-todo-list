@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-function NewTodoForm(props:{addTodo:Function}) {
+export const NewTodoForm: React.FC<{addTodo:Function}> = (props) => {
 
     const [description, setDescription] = useState('');
     const [assigned, setAssigned] = useState('');
 
-    const submitTodo = () =>{
+    const submitTodo = () => {
 
         if(description !== '' && assigned !== ''){
 
@@ -46,5 +46,3 @@ function NewTodoForm(props:{addTodo:Function}) {
 
 
 }
-
-export default NewTodoForm

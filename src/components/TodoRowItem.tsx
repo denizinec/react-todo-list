@@ -1,10 +1,9 @@
 import React from 'react'
-function TodoRowItem(props: 
-    {rowNumber: number, 
+
+export const TodoRowItem: React.FC<{rowNumber: number, 
     rowDescription: string, 
     rowAssigned: string, 
-    deleteTodo: Function}){
-
+    deleteTodo: Function}> = (props) => {
 
     return(
         
@@ -15,8 +14,4 @@ function TodoRowItem(props:
         </tr>
 
     )
-
-
 }
-
-export default TodoRowItem
